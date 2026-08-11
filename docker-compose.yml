@@ -1,0 +1,20 @@
+services:
+  db:
+    # Digest conferido localmente com: docker image inspect postgres:16 --format '{{index .RepoDigests 0}}'
+    image: postgres@sha256:95206741a5b214807675e14165369d05b93a9cf692223b616d07cca227e74b0b
+    environment:
+      POSTGRES_DB: aurora
+      POSTGRES_USER: aurora
+      POSTGRES_PASSWORD: aurora_local_only
+    ports:
+      - "127.0.0.1:55432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aurora -d aurora"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./:/workspace:ro
+volumes:
+  pgdata:

@@ -1,0 +1,2 @@
+SET TIME ZONE 'UTC';
+WITH receita AS (SELECT v.vendedor_id,v.equipe,v.matricula,v.nome,coalesce(sum(m.receita_mercadoria_pre_devolucao),0) receita FROM vendedores v LEFT JOIN vw_pedidos_metricas m ON m.vendedor_id=v.vendedor_id AND m.status_logistico<>'CANCELADO' GROUP BY v.vendedor_id,v.equipe,v.matricula,v.nome), r AS (SELECT *,row_number() over(partition by equipe order by receita DESC,matricula ASC) posicao FROM receita) SELECT equipe,matricula,nome,receita,posicao FROM r WHERE posicao=1 ORDER BY equipe,matricula;

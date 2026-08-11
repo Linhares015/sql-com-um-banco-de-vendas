@@ -1,0 +1,2 @@
+SET TIME ZONE 'UTC';
+WITH x AS (SELECT c.cliente_id,c.codigo_cliente,max(p.data_pedido) ultima_compra FROM clientes c JOIN pedidos p USING(cliente_id) WHERE p.status_logistico<>'CANCELADO' GROUP BY c.cliente_id,c.codigo_cliente) SELECT codigo_cliente,(ultima_compra AT TIME ZONE 'America/Sao_Paulo')::date ultima_compra_civil,DATE '2025-12-31'-(ultima_compra AT TIME ZONE 'America/Sao_Paulo')::date dias_civis_sem_compra FROM x WHERE ultima_compra<TIMESTAMPTZ '2025-10-03 03:00:00+00' ORDER BY ultima_compra,cliente_id;

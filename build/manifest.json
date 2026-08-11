@@ -1,0 +1,45 @@
+{
+  "arquivos": {
+    "canais.csv": {
+      "linhas": 5,
+      "sha256": "66fb4ecce082cbecf1407826b98dbb3643009a88818e62ab160f27b77f2b662e"
+    },
+    "categorias.csv": {
+      "linhas": 8,
+      "sha256": "5d9753c519b0d4117efbc1da3b2ab59779f64336877e2c9d7b2852d135a96cf4"
+    },
+    "clientes.csv": {
+      "linhas": 4000,
+      "sha256": "d0cbab6ded36dae96170a28181106f54fdab9eb76b5e32aa0ec1378250d1957d"
+    },
+    "devolucoes.csv": {
+      "linhas": 720,
+      "sha256": "09196f98952b9fc1c9c85cb813a94ffdfa8652a88c18b7a2adfc1dd3adb2a40c"
+    },
+    "itens_devolucao.csv": {
+      "linhas": 936,
+      "sha256": "aee1be96685bd3452790d3ff802c6be83271041442d10ffc300e153b84d2188d"
+    },
+    "itens_pedido.csv": {
+      "linhas": 27600,
+      "sha256": "6a9a526d30ec1bcdde3a51de8631f72c79590c611edf2708aaa5095e04baae75"
+    },
+    "pagamentos.csv": {
+      "linhas": 13680,
+      "sha256": "406f8fe4f471646531ead31ab8dbf5fe0fe16a8701d22f72f042b9feca59070d"
+    },
+    "pedidos.csv": {
+      "linhas": 12000,
+      "sha256": "a0d81c99c92b623a042bc6606ec3f99becdd181045498a81716a690b54ed6f73"
+    },
+    "produtos.csv": {
+      "linhas": 120,
+      "sha256": "78b5666445b151417b913809f8a7015665b1bf2b261fe0407315fcb43aa52b8e"
+    },
+    "vendedores.csv": {
+      "linhas": 24,
+      "sha256": "3889f1cfa33036e4fad93188076d638fba06bc44d302a6df1b745bed86d43f5b"
+    }
+  },
+  "seed": 20260810
+}

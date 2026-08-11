@@ -1,0 +1,2 @@
+SET TIME ZONE 'UTC';
+WITH x AS (SELECT c.canal_id,c.codigo,c.nome,coalesce(sum(m.receita_mercadoria_pre_devolucao),0) receita FROM canais c LEFT JOIN vw_pedidos_metricas m ON m.canal_id=c.canal_id AND m.status_logistico<>'CANCELADO' GROUP BY c.canal_id,c.codigo,c.nome), t AS (SELECT sum(receita) total FROM x) SELECT x.codigo,x.nome,x.receita,100*x.receita/nullif(t.total,0) participacao_receita_pct FROM x CROSS JOIN t ORDER BY x.codigo;

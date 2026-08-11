@@ -1,0 +1,2 @@
+SET TIME ZONE 'UTC';
+SELECT c.canal_id,c.codigo,c.nome,count(m.pedido_id) pedidos,coalesce(sum(m.receita_mercadoria_pre_devolucao),0) receita_mercadoria_liquida FROM canais c LEFT JOIN vw_pedidos_metricas m ON m.canal_id=c.canal_id AND m.status_logistico<>'CANCELADO' GROUP BY c.canal_id,c.codigo,c.nome ORDER BY c.codigo;

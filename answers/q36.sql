@@ -1,0 +1,2 @@
+SET TIME ZONE 'UTC';
+WITH x AS (SELECT c.categoria_id,c.nome categoria,r.produto_id,r.sku,coalesce(sum(v.receita_mercadoria_pre_devolucao) FILTER(WHERE v.elegivel),0) receita FROM categorias c JOIN produtos r USING(categoria_id) LEFT JOIN vw_itens_venda v USING(produto_id) GROUP BY c.categoria_id,c.nome,r.produto_id,r.sku) SELECT *,dense_rank() over(partition by categoria_id order by receita DESC) posicao FROM x ORDER BY categoria_id,posicao,receita DESC,sku;

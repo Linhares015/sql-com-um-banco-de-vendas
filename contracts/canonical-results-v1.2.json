@@ -1,0 +1,523 @@
+{
+  "answers": {
+    "q01.csv": {
+      "columns": [
+        "categoria_id",
+        "nome",
+        "ativa"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 8,
+      "ordered": true,
+      "sha256": "016e0029dffd4e4ca27627ea414d99fb503859aed41236ce1d57b0f6f187429c",
+      "sql_sha256": "6831bec311e0d250a4294b5eb19b120201a693601d70133092a2839755ac4a68"
+    },
+    "q02.csv": {
+      "columns": [
+        "produto_id",
+        "sku",
+        "nome",
+        "preco_lista_atual"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 37,
+      "ordered": true,
+      "sha256": "78ccfaf7ea28d41dc3353cda8eaa69ff8e5ed50dbefff115d2642f380e0dfb86",
+      "sql_sha256": "d846095c742ed9abd1d52c5966789602cda6bd1795c35ed7fffa7c31a94ca5ec"
+    },
+    "q03.csv": {
+      "columns": [
+        "produto_id",
+        "sku",
+        "nome",
+        "data_descontinuacao"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 0,
+      "ordered": true,
+      "sha256": "b8e2972b19774a39ae062bcc8665bfb3378bc2d20d86c3b6c9751ef8e0f818f1",
+      "sql_sha256": "a2a0a988362ec63f660ab0574999a22c3276f0b5f60dbf861debdf3461f7a13b"
+    },
+    "q04.csv": {
+      "columns": [
+        "regiao",
+        "clientes"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 5,
+      "ordered": true,
+      "sha256": "279e7183fac96b2ebb822d694d680ddfc8b8ed52ad69e18cffeb0cd253e76879",
+      "sql_sha256": "3acc4a9c9d6f2ebc0705c1e5315e4b13960cdf2cc3468ec64b3c2c420ba008f7"
+    },
+    "q05.csv": {
+      "columns": [
+        "clientes_com_data_nascimento"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 1,
+      "ordered": true,
+      "sha256": "45d7667c1a508cf1c3cb6376e83e90f418fc1808bb7fbbdb7c2864ff30e838bd",
+      "sql_sha256": "eb5998a6de859eb0103769930eef5c1170e3e976ef25eff3628e8ea81f2c6eb7"
+    },
+    "q06.csv": {
+      "columns": [
+        "pedido_id",
+        "numero_pedido",
+        "data_pedido_civil"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 1440,
+      "ordered": true,
+      "sha256": "7ee022cee3ef9fb841aea82749c91f91b9839a460e1ad322bb1bf138e04926c6",
+      "sql_sha256": "4e510351625f31fa657d7a35bb00e437586e85e153f901ce34325891016b5996"
+    },
+    "q07.csv": {
+      "columns": [
+        "ano",
+        "pedidos"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 3,
+      "ordered": true,
+      "sha256": "dcbe4c1d7aba906acadbc67dec70ca236eab5c7d9f55fd238a5dbbec5421e85f",
+      "sql_sha256": "406e0d99c797da20e69f99b0a349c443eea0af083baa0da0012be1816d1e16b9"
+    },
+    "q08.csv": {
+      "columns": [
+        "preco_minimo",
+        "preco_maximo",
+        "preco_medio"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 1,
+      "ordered": true,
+      "sha256": "2a19920939070a9e7c52df1cf788f3e43e66946632f9a4a992db8d0118731c57",
+      "sql_sha256": "810777050cceffb55a3445fc9dd55164b9a41be20e87e03ed6124daa3cc45f13"
+    },
+    "q09.csv": {
+      "columns": [
+        "produto_id",
+        "sku",
+        "nome",
+        "preco_lista_atual"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 10,
+      "ordered": true,
+      "sha256": "f84905988fa369901ac7f2c171ee951dac75351bfffb0ede45da3ec9d755592f",
+      "sql_sha256": "aac5324ffe9901764f782cb21923c27bbddc2b7719b2c4a2d1a1ac1a30e4a573"
+    },
+    "q10.csv": {
+      "columns": [
+        "status_logistico",
+        "pedidos"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 4,
+      "ordered": true,
+      "sha256": "4e2aea26d8962c56f9250a5e7434d16d9571e4ac07e63c6c99f20d338695e6f2",
+      "sql_sha256": "d1ba91f40da70ed9a5b59966af66532654681406eb429332e8d997d5f946d8a2"
+    },
+    "q11.csv": {
+      "columns": [
+        "item_pedido_id",
+        "pedido_id",
+        "numero_item",
+        "produto_id",
+        "quantidade",
+        "preco_unitario",
+        "valor_bruto_item"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 27600,
+      "ordered": true,
+      "sha256": "462b77db2f7d4dc19934866d48e053411cb14ee59efbb172a35b0870284d3305",
+      "sql_sha256": "d30d519f33e14f61aebb0727c1284852e92759b198b3c4853b551c17c44f2ec6"
+    },
+    "q12.csv": {
+      "columns": [
+        "pedido_id",
+        "numero_pedido",
+        "receita_mercadoria_liquida"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 11160,
+      "ordered": true,
+      "sha256": "8fbd11e55f8bf64e2c6f3f98df6b91391b71fed101f22ea5a4248d9867a208a9",
+      "sql_sha256": "13190cfd42eeb0c6c2379f69598cf06c5c2b21748374bbe0ac263b880a58d480"
+    },
+    "q13.csv": {
+      "columns": [
+        "pedido_id",
+        "numero_pedido",
+        "desconto_mercadoria"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 11160,
+      "ordered": true,
+      "sha256": "3259783f4eb2018a0e24aa4bf68d1f88010fea33a876c11530363a31df178ff5",
+      "sql_sha256": "3081e941a4941996d6d8d0728320c8e5c8b986a5e82d4ee4ecb8702f1e37d156"
+    },
+    "q14.csv": {
+      "columns": [
+        "mes",
+        "receita_mercadoria_liquida"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 36,
+      "ordered": true,
+      "sha256": "576f805ec1710d8caddcb1679defd686858e22ee4bd585520b8574174bc21ea8",
+      "sql_sha256": "6233ecd076fd5554620cbfe9c993f523bd7e316fc8389dea1548d752c6f0e3df"
+    },
+    "q15.csv": {
+      "columns": [
+        "canal_id",
+        "codigo",
+        "nome",
+        "pedidos",
+        "receita_mercadoria_liquida"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 5,
+      "ordered": true,
+      "sha256": "ba612a5f1d2f11da3ebb56d70e901e9c5af7b42f04b10b74465e3e8da70f07c4",
+      "sql_sha256": "f5902ff3e7dc1a4c02868c7342503c0516c95f21c42faf58e9ebb94639f48f3d"
+    },
+    "q16.csv": {
+      "columns": [
+        "canal_id",
+        "codigo",
+        "nome",
+        "pedidos",
+        "receita_mercadoria_liquida",
+        "ticket_medio"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 5,
+      "ordered": true,
+      "sha256": "240c0c202b2a6223d924a311b80915d970d2a602fa3a4333531142af320cad9a",
+      "sql_sha256": "030654e4b7fcca1884f5124afa9983d71ccc3d3c7e1cd95db6087ee55f502d7e"
+    },
+    "q17.csv": {
+      "columns": [
+        "categoria_id",
+        "categoria",
+        "receita_mercadoria_liquida"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 8,
+      "ordered": true,
+      "sha256": "3f2d4e96e809f6c85a97c5e09960056ea993456e990aebcf4205072722c46e1f",
+      "sql_sha256": "da48f8cbfd537a6138a4c905b86910f633a1793740c73b8fe3551d03da2c3fab"
+    },
+    "q18.csv": {
+      "columns": [
+        "produto_id",
+        "sku",
+        "nome"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 8,
+      "ordered": true,
+      "sha256": "596a2d60e3e7f17b768af4f8a24f00564add139428941a609473b11a75da9c15",
+      "sql_sha256": "17f6388224eacde25118e000636ae270e7b73e324f805c4f5bf356d99f011bb5"
+    },
+    "q19.csv": {
+      "columns": [
+        "cliente_id",
+        "codigo_cliente",
+        "nome"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 400,
+      "ordered": true,
+      "sha256": "09686ab835ace86a54253cdc0dc2c7b561bfe49f01358979e4381d4af2a1ec70",
+      "sql_sha256": "b08547ea2124fd48f712688d98b88fd17f70c1d8a7afed0b30abfdc71eab8c8e"
+    },
+    "q20.csv": {
+      "columns": [
+        "vendedor_id",
+        "matricula",
+        "nome",
+        "equipe"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 2,
+      "ordered": true,
+      "sha256": "768987350f184f02ae1b57e74388099f52fb9667340b60a443b1fa484cb214f8",
+      "sql_sha256": "815196c12a9fd0fbeb4d45d2a1e880e5c98342731f8ddee9e69990b3793a6b3b"
+    },
+    "q21.csv": {
+      "columns": [
+        "equipe",
+        "matricula",
+        "nome",
+        "receita",
+        "posicao"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 3,
+      "ordered": true,
+      "sha256": "3cac04465ab14aa29d1de31f4d9a924ecd9aa4bce45707861f14002993eb0e38",
+      "sql_sha256": "7f9529d7037451a9004c85c4378cca7d4237c424cf9ce8082a9abc7c19653130"
+    },
+    "q22.csv": {
+      "columns": [
+        "codigo",
+        "nome",
+        "receita",
+        "participacao_receita_pct"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 5,
+      "ordered": true,
+      "sha256": "22ace69f92e71bf65cc8b2f0341b81d4c9bae5a8d5c7a924e62cceaa62aab2fe",
+      "sql_sha256": "18534254c2bad6d4479c0e972fd840b777722f47645eede0e0db3c5993e766a4"
+    },
+    "q23.csv": {
+      "columns": [
+        "mes",
+        "desconto_mercadoria",
+        "receita_bruta",
+        "desconto_efetivo_pct"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 36,
+      "ordered": true,
+      "sha256": "d90ff1d6145d06a47dfdef3c19d23e8f9e7b8531b1f9da84b371b444a0606db5",
+      "sql_sha256": "3a75de06fb8be2801dd07a22a0da72a3001a40758b7f407bec3c74ed4571b908"
+    },
+    "q24.csv": {
+      "columns": [
+        "numero_pedido",
+        "quantidade_cobrancas_aprovadas",
+        "quantidade_meios",
+        "valor_cobrado_aprovado"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 480,
+      "ordered": true,
+      "sha256": "412e61b6bc97779732a00739b003bb879b8240d077e9e001dc3697bad734c133",
+      "sql_sha256": "4492ee96023680462b67d5b7bce180c4870797979c5ab6e5c9e0e693c4747998"
+    },
+    "q25.csv": {
+      "columns": [
+        "numero_pedido",
+        "saldo_financeiro",
+        "total_esperado",
+        "diferenca"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 12000,
+      "ordered": true,
+      "sha256": "2c646ca15a47d9fe61b8b3253bb79a0be8390b0f3d83ae9c85a77274cfe36351",
+      "sql_sha256": "5c390c866d6bda0ffddfaccb2b7ff6d5f9fb0d6e4f5810fec31c6e1610fdb0a4"
+    },
+    "q26.csv": {
+      "columns": [
+        "codigo",
+        "nome",
+        "pedidos",
+        "pedidos_cancelados",
+        "taxa_cancelamento_pct"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 5,
+      "ordered": true,
+      "sha256": "70cbbdb763d4118e1f986eaf0cc73e7a3dff22cfdc11c9e13f245d83593b4df9",
+      "sql_sha256": "c4b791961fa5869aa6cd7bdc836d115e234fbea7410f58d360f2a076556e067e"
+    },
+    "q27.csv": {
+      "columns": [
+        "faixa",
+        "clientes"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 3,
+      "ordered": true,
+      "sha256": "d3f60c6431518a29ee0c244f867ba1d6ccd1841d4399f9e85b89a05ee9d7383d",
+      "sql_sha256": "82ffa7820dff6344a51186675960029ca96d7741642f3be6c2bc94472af15bd5"
+    },
+    "q28.csv": {
+      "columns": [
+        "compradores_identificados",
+        "compradores_recorrentes",
+        "taxa_recompra_pct",
+        "taxa_recompra_pct_apresentacao"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 1,
+      "ordered": true,
+      "sha256": "b2b405a0715dfeb087d488d1170ecec43f9ab20c0b5911d9244a26c5e6278a6c",
+      "sql_sha256": "4bc28372b4c0642c5d0ba1e9a2b656a7bbd5672cc1a03ce560a72c9c6570cdb4"
+    },
+    "q29.csv": {
+      "columns": [
+        "codigo_cliente",
+        "ultima_compra_civil",
+        "dias_civis_sem_compra"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 2479,
+      "ordered": true,
+      "sha256": "c7f83f0f877690750b0678f1a88149f08620ed7c8207fda802a9cb536d8c8188",
+      "sql_sha256": "b949c1b1a8dd33351e500c55cae49a8d8c6c51997ce596de0f4bc6a8d717444c"
+    },
+    "q30.csv": {
+      "columns": [
+        "intervalo_medio_dias"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 1,
+      "ordered": true,
+      "sha256": "7e5c2ffd6810cf5d2ab0daa1c528d6d2d3c72e854ff5e0a5a173c869e8e39adf",
+      "sql_sha256": "fa1218d5f71531dd2a269432323d4f5ddfbcc60bdf38cd56d504048f67f44940"
+    },
+    "q31.csv": {
+      "columns": [
+        "categoria_id",
+        "categoria",
+        "unidades_devolvidas"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 8,
+      "ordered": true,
+      "sha256": "676d3f9c4c3e038035ca1c9466ca14a5f626c32955ed61fd8895202b58e7ea53",
+      "sql_sha256": "2c1c0f9ddd18b5cfed9f1c8399893bc4b5364425db803a1643e77238cbdd7d49"
+    },
+    "q32.csv": {
+      "columns": [
+        "produto_id",
+        "sku",
+        "unidades_vendidas",
+        "unidades_devolvidas",
+        "taxa_devolucao_pct"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 120,
+      "ordered": true,
+      "sha256": "22223ba709c3b69f75fd8d6423f503a796122367408e41d22e4d8bae47db935b",
+      "sql_sha256": "78db0bb0fee4d7310b1ccd0bb508faa6660553ce00ea1117bda75bfb3428a9dc"
+    },
+    "q33.csv": {
+      "columns": [
+        "mes",
+        "receita_mercadoria_pos_devolucao"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 36,
+      "ordered": true,
+      "sha256": "b13d2bd20c8b0663f027061da18c784aacc0bb70524d00155db269178087ec3c",
+      "sql_sha256": "47ac5a24bf90868d34c37eecb620f90aa0342e8217fe72a6fca4f91ba2426cf3"
+    },
+    "q34.csv": {
+      "columns": [
+        "mes",
+        "reembolso_concluido"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 13,
+      "ordered": true,
+      "sha256": "7568dca1c5a2491e78314fa06cf7cd8d7a4ca96d0c32004712fd3a37ea490380",
+      "sql_sha256": "07261e6a2fa537607c26f42f50e91df950e52cab651bf0dadcd1fff729ccf7a0"
+    },
+    "q35.csv": {
+      "columns": [
+        "sku",
+        "receita_mercadoria_pos_devolucao",
+        "custo_mercadoria_mantida",
+        "margem_mercadoria",
+        "quantidade_linhas_margem_unitaria_negativa",
+        "valor_margem_original_negativa"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 120,
+      "ordered": true,
+      "sha256": "81f1cc1ab22ebd780978322bec3d9e41c4d1ba6a36919c60caf715501af1705c",
+      "sql_sha256": "dd5757bc309c24bb1aa1aeda1cb1d9ba3202d2f08d50889157414c5b46d5c358"
+    },
+    "q36.csv": {
+      "columns": [
+        "categoria_id",
+        "categoria",
+        "produto_id",
+        "sku",
+        "receita",
+        "posicao"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 120,
+      "ordered": true,
+      "sha256": "8f7106ad7be9b80eb05811cff8cc612a8aa339d1838de0cc275b5aeaa6f97f33",
+      "sql_sha256": "8dd7e79cc78e429b99444cd10c3ac0e7c6931fe340d004733cf4d30d8e0e065c"
+    },
+    "q37.csv": {
+      "columns": [
+        "mes",
+        "receita",
+        "receita_ano_anterior",
+        "variacao_abs",
+        "taxa_variacao_pct"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 36,
+      "ordered": true,
+      "sha256": "3141e0ebe85f5760129cb86351bc48298f76d6382ca52b4fb81582ddd346e4bb",
+      "sql_sha256": "c5b448d9dc04d3553e572d0392f0af225c552be259ac6be3f9acc0e8149cca7e"
+    },
+    "q38.csv": {
+      "columns": [
+        "mes",
+        "receita",
+        "media_movel_3m",
+        "meses_na_janela"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 36,
+      "ordered": true,
+      "sha256": "30de0f5a883e77791218e30fe79d7df9a82855b278670e519d53b4cd9e5eb1eb",
+      "sql_sha256": "5dc193b49d83d1d8d570b36b30d27e97111ad50fd3f322eadfc9fdefc35247f3"
+    },
+    "q39.csv": {
+      "columns": [
+        "mes",
+        "receita_convidado",
+        "receita_primeira_compra",
+        "receita_recorrente",
+        "receita_total",
+        "pct_convidado",
+        "pct_primeira_compra",
+        "pct_recorrente"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 36,
+      "ordered": true,
+      "sha256": "3c8447a2663dbcbc65896539e798f846b1488579f75b70a67bf82500f40443c7",
+      "sql_sha256": "c35366cb3dee70895626971838dedb54786f75288b816de4e9b5cd574ae389c9"
+    },
+    "q40.csv": {
+      "columns": [
+        "mes",
+        "canal",
+        "categoria",
+        "receita",
+        "receita_anterior",
+        "margem",
+        "margem_anterior",
+        "queda_receita_abs",
+        "queda_margem_abs",
+        "queda_receita_pct",
+        "queda_margem_pct",
+        "score_investigacao"
+      ],
+      "format": "utf-8,lf,csv,null=NULL,header",
+      "linhas": 20,
+      "ordered": true,
+      "sha256": "b340acf5dc36ee354edb61b80a80c08e7e6c92c844b264a3e5103d8dfb3ba7ce",
+      "sql_sha256": "e87d64d974a01130a29a9d752f1e73aeff73e7de2c4bbbe50581730f85ab4576"
+    }
+  },
+  "postgres_image": "postgres@sha256:95206741a5b214807675e14165369d05b93a9cf692223b616d07cca227e74b0b",
+  "reference_version": "v1.2-remediation-v3",
+  "source": "approved canonical snapshot; update only by an explicit reviewed commit"
+}

@@ -1,0 +1,2 @@
+SET TIME ZONE 'UTC';
+WITH x AS (SELECT cliente_id,count(*) compras FROM pedidos WHERE cliente_id IS NOT NULL AND status_logistico<>'CANCELADO' GROUP BY cliente_id), t AS (SELECT count(*) compradores_identificados,count(*) FILTER(WHERE compras>=2) compradores_recorrentes FROM x) SELECT compradores_identificados,compradores_recorrentes,100::numeric*compradores_recorrentes/nullif(compradores_identificados,0) taxa_recompra_pct,round(100::numeric*compradores_recorrentes/nullif(compradores_identificados,0),2) taxa_recompra_pct_apresentacao FROM t;

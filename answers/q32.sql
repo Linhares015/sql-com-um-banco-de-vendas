@@ -1,0 +1,2 @@
+SET TIME ZONE 'UTC';
+SELECT r.produto_id,r.sku,coalesce(sum(v.quantidade) FILTER(WHERE v.elegivel),0) unidades_vendidas,coalesce(sum(v.quantidade_devolvida_concluida) FILTER(WHERE v.elegivel),0) unidades_devolvidas,100.0*sum(v.quantidade_devolvida_concluida) FILTER(WHERE v.elegivel)/nullif(sum(v.quantidade) FILTER(WHERE v.elegivel),0) taxa_devolucao_pct FROM produtos r LEFT JOIN vw_itens_venda v USING(produto_id) GROUP BY r.produto_id,r.sku ORDER BY taxa_devolucao_pct DESC NULLS LAST,r.sku;

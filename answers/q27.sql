@@ -1,0 +1,2 @@
+SET TIME ZONE 'UTC';
+WITH x AS (SELECT cliente_id,count(*) compras FROM pedidos WHERE cliente_id IS NOT NULL AND status_logistico<>'CANCELADO' GROUP BY cliente_id) SELECT CASE WHEN compras=1 THEN 'uma' WHEN compras=2 THEN 'duas' ELSE 'tres_ou_mais' END faixa,count(*) clientes FROM x GROUP BY 1 ORDER BY CASE CASE WHEN compras=1 THEN 'uma' WHEN compras=2 THEN 'duas' ELSE 'tres_ou_mais' END WHEN 'uma' THEN 1 WHEN 'duas' THEN 2 ELSE 3 END;

@@ -1,0 +1,2 @@
+SET TIME ZONE 'UTC';
+WITH x AS (SELECT cliente_id,data_pedido,pedido_id,row_number() over(partition by cliente_id order by data_pedido,pedido_id) rn FROM pedidos WHERE cliente_id IS NOT NULL AND status_logistico<>'CANCELADO'), y AS (SELECT cliente_id,max(data_pedido) FILTER(WHERE rn=1) primeira_compra,max(data_pedido) FILTER(WHERE rn=2) segunda_compra FROM x GROUP BY cliente_id) SELECT avg((segunda_compra AT TIME ZONE 'America/Sao_Paulo')::date-(primeira_compra AT TIME ZONE 'America/Sao_Paulo')::date) intervalo_medio_dias FROM y WHERE segunda_compra IS NOT NULL;
