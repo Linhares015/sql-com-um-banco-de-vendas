@@ -72,6 +72,7 @@ docker compose down -v --remove-orphans
 .
 ├── README.md
 ├── LICENSE-STATUS.md
+├── PROJECT-FINAL-DELIVERABLES.md
 ├── MANIFEST.sha256
 ├── docker-compose.yml
 ├── schema.sql
